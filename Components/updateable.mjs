@@ -19,8 +19,7 @@ export class EventObject extends EventTarget
    constructor(options)
    {
       super();
-      if(options === undefined) options = new EventOptions();
-      this.options = options;
+      this.options = options ?? new EventOptions();
    }
    /**
     * @param {string} type 
